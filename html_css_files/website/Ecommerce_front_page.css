@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: relative; /* Added for positioning */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-container {
+    position: absolute; /* Positioning the profile in the header */
+    top: 10px;
+    right: 20px;
+}
+
+.profile-pic {
+    width: 50px; /* Smaller size for the profile picture */
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.search-container {
+    margin: 20px;
+    text-align: center; /* Center the search bar */
+}
+
+.search-container input[type="text"] {
+    width: 300px; /* Width of the search input */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+.search-container input[type="submit"] {
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 5px; /* Space between input and button */
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+#chat {
+    margin: 20px;
+}
+
+#chat-box {
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#message-input {
+    width: 80%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}

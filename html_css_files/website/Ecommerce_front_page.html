@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Site</title>
+    <link rel="stylesheet" href="Ecommerce_front_page.css">
+</head>
+<body>
+    <header>
+        <h1>My E-commerce Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <div class="search-container">
+                <form>
+                    <input type="text" id="search-input" placeholder="Search for doctors or medical services..." required>
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </section>
+
+        <section id="search-results">
+            <h2>Search Results</h2>
+            <ul id="results-list"></ul>
+        </section>
+
+        <section id="profile">
+            <div class="profile-pic" id="profile-pic" onclick="toggleProfile()">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            </div>
+            <div id="profile-modal" class="profile-modal">
+                <div class="modal-content">
+                    <span class="close" onclick="toggleProfile()">&times;</span>
+                    <h2>User Profile</h2>
+                    <button onclick="alert('History Clicked')">History</button>
+                    <button onclick="alert('Transaction Clicked')">Transaction</button>
+                    <button onclick="alert('Cart Clicked')">Cart</button>
+                    <div>
+                        <input type="text" placeholder="Follow" id="follow-input">
+                        <input type="text" placeholder="Followers" id="followers-input">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product" data-id="1">
+                <h3>Product 1</h3>
+                <p>Price: $10</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <h3>Product 2</h3>
+                <p>Price: $20</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: $0</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@myecommerce.com</p>
+        </section>
+
+        <section id="chat">
+            <h2>Chat with Followers</h2>
+            <div id="chat-box" style="border: 1px solid #ccc; height: 300px; overflow-y: scroll; padding: 10px;"></div>
+            <input type="text" id="message-input" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My E-commerce Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

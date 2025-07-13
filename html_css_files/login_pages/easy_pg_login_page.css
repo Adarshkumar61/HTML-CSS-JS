@@ -1,0 +1,91 @@
+/* for links*/
+.free {
+    display: flex;
+    gap: 30px;
+  position: absolute;
+  top: 4.1%;
+  left: 34%;
+  outline: none;
+  text-decoration: none;
+  background-color: aliceblue;
+  
+}
+/* for heading*/
+h1 {
+  color: rgb(10, 247, 144);
+  filter: drop-shadow(0 0  15px);
+}
+/* for  whole form8*/
+.good {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-left: 10em;
+  margin-top: 8em;
+  border-radius: 9px;
+  border: 1px solid rgb(231, 227, 222);
+color: aliceblue;
+box-shadow: 0px 0px 10px rgb(217, 183, 191);
+backface-visibility:visible;
+transition: 0.2s ease;
+padding: 10px;
+
+}
+/* for only form except heading (h1)*/
+.we {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  
+}
+body {
+  background-image: url('image/login bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+input {
+  padding: 5px 3px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+  
+}
+label {
+  text-align: center;
+  padding: 4px;
+}
+.button {
+  color:rgb(242, 242, 248);
+  padding: 4px 12px;
+  background-color: rgb(10, 199, 16);
+  border: 1px solid;
+  border-radius: 4px;
+  box-shadow: 2px 3px 11px rgb(213, 213, 134);
+  cursor: pointer;
+  transition: 0.5s ease;
+  
+}
+button:hover {
+  background-color: rgb(215, 21, 21);
+  transition: 0.4s ease;
+  border-radius: 20px;
+  padding: 7px;
+}
+a:hover {
+  background-color: aqua;
+  border-radius: 2px;
+}
+h2 {
+  font-family: sans-serif;
+}
+input:hover {
+  background-color: rgb(156, 240, 240);
+  padding: 6.3px;
+}
+.good:hover {
+ transform: scale(1.06);
+}

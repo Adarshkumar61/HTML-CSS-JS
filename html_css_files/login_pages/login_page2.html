@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #login-form {
+            display: grid;
+            background-color: rgb(25, 190, 190);
+            max-width: fit-content;
+            
+        }
+        input {
+            text-align: center;
+            padding: 10px 13px;
+            border-radius: 12px;
+        border: 1px solid bisque;
+        
+        }
+        label {
+            text-align: center;
+        }
+        button {
+            color: aliceblue;
+            background-color: rgb(57, 57, 229);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="error-message" style="color: red; display: none;">Invalid credentials. Please try again.</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('login-form');
+    const errorMessage = document.getElementById('error-message');
+
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent form submission
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // For demonstration purposes, check if username and password match
+        if (username === 'myuser' && password === 'mypassword') {
+            // Simulate successful login (you can redirect to another page here)
+            alert('Login successful!');
+        } else {
+            // Show error message
+            errorMessage.style.display = 'block';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
