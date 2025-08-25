@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Search Bar</title>
+    <style>
+       body {
+        background-color: linear-gradient(blue);
+        padding: 90px;
+        margin-left: 90px;
+
+       }
+       input {
+        padding: 9px 15px;
+        background-color: #e4e4f6;
+        border: none;
+        cursor: pointer;
+        border-radius: 3.9px;
+       }
+       button {
+        background-color: rgb(64, 64, 219);
+        color: #eeeef9;
+        padding: 6px;
+        border-radius: 50px 10px;
+        cursor: pointer;
+        position: absolute;
+       }
+       details {
+        cursor: pointer;
+
+       }
+       details:hover{
+        color: blue;
+       }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>Help</summary>
+        <p>menu
+        </p>
+        <p>setting</p>
+        <p>account center</p>
+    </details>
+    <h1>Custom Search Bar</h1>
+        <form id="search-form">
+        <input type="search" id="query" name="q" placeholder="Search Google...">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

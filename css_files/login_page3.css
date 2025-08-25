@@ -1,0 +1,22 @@
+#form {
+    display:  flex;
+    flex-direction: column;
+}
+.contain {
+   
+    border: 1px solid;
+   max-width: 400px;
+   height: 240px;
+   border-radius: 12px;
+}
+label {
+    margin-bottom: 6px;
+}
+body {
+    text-align: center;
+    padding: 10px;
+}
+input {
+    margin: 5px;
+    padding: 5px 70px;
+}
